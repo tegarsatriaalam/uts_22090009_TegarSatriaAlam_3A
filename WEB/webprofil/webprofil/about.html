@@ -1,0 +1,264 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Website Portofolio</title>
+	<link rel="stylesheet" type="text/css" href="style.css">
+	<style>
+        *{
+	margin:0px;
+	padding:0px;
+}
+#hero{
+	background-color:#3A4D39;
+	display:flex;
+	flex-direction:column;
+	height:100vh;
+	align-items:center;
+	justify-content:center;
+}
+#about{
+    background-color: #4F6F52;
+    display:flex;
+	flex-direction:column;
+	height:80vh;
+	align-items:center; 
+    padding: 120px;
+}
+#skills {
+    background-color: #4F6F52;
+    padding: 40px 0;
+    text-align: center;
+}
+#project{
+	background-color: #86A789;
+}
+
+.skills-container {
+    max-width: 800px;
+    margin: 0 auto;
+}
+
+.skills-list {
+    list-style: none;
+    padding: 0;
+}
+
+.skills-list li {
+    display: inline-block;
+    margin: 10px;
+    padding: 8px 15px;
+    border: 1px solid #739072;
+    border-radius: 20px;
+    background-color: #739072;
+}
+.achievements-container img {
+    max-width: 100%;
+    height: auto;
+    display: block;
+    margin: 0 auto;
+}
+nav{
+	background-color:#86A789;
+	height:100px;
+	width:100%;
+	position:fixed;
+	display:flex;
+	align-items:center;
+	justify-content:flex-end;
+	color:black;
+}
+nav a{
+	font-size:30px;
+	margin:0 5% 0 5%;
+}
+nav a:hover{
+	color:#43A047;
+}
+main section{
+	margin:20px 10% 20px 10%;
+	display:grid;
+	grid-template:repeat(2,1fr)/repeat(3,1fr);
+	grid-column-gap:10px;
+	justify-items:center;
+}
+.project-tile{
+
+	display:flex;
+	flex-direction:column;
+	align-items:center;
+}
+.project-tile img{
+	width: 250px;
+}
+main{
+	padding-top:120px;
+	display:flex;
+	flex-direction:column;
+}
+main button {
+	text-align:center;
+	border-radius:5px;
+	border-color:#03A9F4;
+	cursor:pointer;
+	box-shadow:none;
+	width:auto;
+	align-self:center;
+	padding:5px 10px 5px 10px;
+	margin-bottom:20px;
+}
+main a,main a:hover,main a:active,main a:focus,main a:visited{
+	text-decoration:none;
+	color:#03A9F4;
+}
+main section div a:hover{
+	border-radius:10px;
+	box-shadow:
+		-5px 5px 20px,
+		5px -5px 20px,
+		5px 5px 20px,
+		-5px -5px 20px;
+}
+a, a:hover, a:active, a:focus, a:visited{
+	color:black;
+	text-decoration:none;
+}
+main section div a img{
+	border:solid;
+	border-color:#03A9F4;
+	border-width:2px;
+	border-radius:10px;
+	height:120px;
+	width:auto;
+	overflow:hidden;
+}
+footer{
+	background-color:#86A789;
+	height:100vh;
+	display:flex;
+	flex-direction:row;		align-items:center;
+	justify-content:space-evenly;
+}
+footer div a{
+	background-color:black;
+	border-radius:50%;
+	height:150px;
+	width:150px;
+	display:flex;
+	align-items:center;
+	justify-content:center;
+	white-space:pre-line;
+	overflow:hidden;
+}
+footer div a:hover{
+	border-radius:50%;
+	box-shadow:
+		-5px 5px 10px,
+		5px -5px 10px,
+		5px 5px 10px,
+		-5px -5px 10px;
+}
+footer div a img{
+	border-radius:50%;
+}
+footer div p{
+	text-align:center;
+}
+@media (max-width:800px){
+	nav{
+	background-color:#C5CAE9;
+	height:100px;
+	width:100%;
+	position:fixed;
+	display:flex;
+	align-items:center;
+	justify-content:center;
+	color:black;
+	z-index:1;
+}
+	main section{
+		margin:20px 10% 20px 10%;
+		display:grid;
+		grid-template:repeat(6,1fr)/1fr;
+		justify-items:center;
+	}
+	footer{
+		background-color:#A7FFEB;
+		height:100vh;
+		display:flex;
+		align-items:center;
+		justify-content:space-evenly;
+	}
+}
+    </style>
+</head>
+<body>
+<nav id="navbar">
+	<a href="#hero">HOME</a>
+    <a href="#about">ABOUT ME</a>
+	<a href="#main">PROJECTS</a>
+	<a href="#footer">CONTACT ME</a>
+</nav>
+<header id="hero">
+	<h1>Hello, I'm Tegar Satria Alam</h1>
+	<p>Wellcome to my Portfolio</p>
+</header>
+<section id="about">
+    <h1>ABOUT ME</h1>
+    <br>
+    <br>
+    <img src="./gambar/me.jpg" alt="Fotoku" style="width: 250px;height: 500px;">
+    <br>
+    <p>Hello Guy's My name is Tegar Satria Alam</p>
+    <p>My Address : Desa Sitanggal Rt.15, Rw.2, Kec.Larangan, Kab.Brebes</p>
+    <br>
+    <section id="skills">
+        <div class="skills-container">
+            <h2>My Skills</h2>
+            <ul class="skills-list">
+                <li>HTML</li>
+                <li>CSS</li>
+                <li>JavaScript</li>
+                <li>Python</li>
+            </ul>
+        </div>
+    </section>
+    <br>
+</section>
+<main id="main" style="background-color: #D2E3C8;">
+	<section id="projects">
+		<div class="project-tile">
+		</div>
+		<div class="project-tile">
+			<a href="https://www.figma.com/proto/LkYPOflWuNsb3rmVCGn2Xz/protoype?type=design&node-id=114-25&t=TKNBxzAw0xL9KCJr-0&scaling=scale-down&page-id=0%3A1&starting-point-node-id=106%3A2" target="_blank"><img src="./gambar/figma.png"></a>
+			<div>Aplikasi Jual Beli Padi</div>
+		</div>
+		<div class="project-tile">
+		</div>
+    	</section>
+        <section id="achievements">
+            <div class="achievements-container">
+                <img src="./gambar/sertifikat.png" alt="Achievement Image">
+                <p> Sertifikat mengikuti pelatihan Diital Marketing</p>
+            </div>
+        </section>
+</main>
+<footer id="footer">
+	<div>
+		<a id="profile-link" href="https://instagram.com/tegarrsa_?igshid=OGQ5ZDc2ODk2ZA==" target="_blank"><img src="./gambar/ig.png" width="150px"></a>
+		<p>Instagram profile</p>
+	</div>
+	<div>
+		<a href="https://www.facebook.com/tegar.sa.568?mibextid=ZbWKwL" target="_blank"><img src="./gambar/fb.png" width="150px"></a>
+		<p>facebook</p>
+	</div>
+	<div>
+		<a href="wa.me/62 856-4794-6700" target="_blank"><img src="./gambar/wa.jpg" width="220px"></a>
+		<p>WhatsApp</p>
+	</div>
+</footer>
+<script type="text/javascript">
+	const projectName = 'portfolio';
+localStorage.setItem('example_project', 'Personal Portfolio');
+</script>
+</body>
+</html>
